@@ -216,6 +216,7 @@
         }
         navSlide();
 
+        
         var resultDiv = document.getElementById('result');
 
         var breddeInput = document.getElementById('bredde');
@@ -228,6 +229,7 @@
         var resultbDiv = document.getElementById('resultb');
         calculate();
         function calculate() {
+            
             var bredde = breddeInput.value;
             var høyde = høydeInput.value;
             var areal = høyde * bredde;
@@ -276,7 +278,8 @@
                 bredde2 + '*' + høyde2 + '=' + areal2 + ' areal';
         }
         function aboutPage() {
-            document.getElementById('info').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam vehicula ipsum a arcu cursus vitae congue mauris. Enim facilisis gravida neque convallis a cras. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Nisl vel pretium lectus quam id leo in vitae turpis. Cursus vitae congue mauris rhoncus. Id ornare arcu odio ut sem. Facilisi etiam dignissim diam quis. Aenean vel elit scelerisque mauris. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Fermentum odio eu feugiat pretium nibh."
+            document.getElementById('info').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam vehicula ipsum a arcu cursus vitae congue mauris. Enim facilisis gravida neque convallis a cras. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Nisl vel pretium lectus quam id leo in vitae turpis. Cursus vitae congue mauris rhoncus. Id ornare arcu odio ut sem. Facilisi etiam dignissim diam quis. Aenean vel elit scelerisque mauris. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Fermentum odio eu feugiat pretium nibh.";
+            document.getElementsByClassName('page').style.visibility='hidden';
         }
     </script>
 </body>
