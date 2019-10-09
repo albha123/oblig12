@@ -19,27 +19,27 @@
                                  'boks boks2'
                                  'resulta resultb';
         }
-        div.boks{
+        div#boks{
             grid-area:boks;
             align-items:center;
         }
-        div.boks2{
+        div#boks2{
             grid-area:boks2;
             align-items:center;
         }
-        div.resultb {
+        div#resultb {
             grid-area:resultb
         }    
-        div.result{
+        div#result{
             grid-area:result
         }
-        div.resulta{
+        div#resulta{
             grid-area:resulta
         }
-        div.slider{
+        div#slider{
             grid-area:slider
         }
-        div.slider2{
+        div#slider2{
             grid-area:slider2
         }
 
@@ -278,17 +278,17 @@
                 bredde2 + '*' + høyde2 + '=' + areal2 + ' areal';
         }
         function aboutPage() {
-            document.getElementById("info").setAttribute("id", "slider");
-            document.getElementById("slider").setAttribute("id", "slider1");
-                document.getElementById('slider').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam vehicula ipsum a arcu cursus vitae congue mauris. Enim facilisis gravida neque convallis a cras. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Nisl vel pretium lectus quam id leo in vitae turpis. Cursus vitae congue mauris rhoncus. Id ornare arcu odio ut sem. Facilisi etiam dignissim diam quis. Aenean vel elit scelerisque mauris. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Fermentum odio eu feugiat pretium nibh.";
-                document.getElementById('slider1').style.visibility = 'hidden';
-                document.getElementById('result').style.visibility = 'hidden';
-                document.getElementById('resulta').style.visibility = 'hidden';
-                document.getElementById('boks').style.visibility = 'hidden';
-                document.getElementById('boks2').style.visibility = 'hidden';
-                document.getElementById('resultb').style.visibility = 'hidden';
-                document.getElementById('slider2').style.visibility = 'hidden';
+
             
+                document.getElementById('info').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam vehicula ipsum a arcu cursus vitae congue mauris. Enim facilisis gravida neque convallis a cras. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Nisl vel pretium lectus quam id leo in vitae turpis. Cursus vitae congue mauris rhoncus. Id ornare arcu odio ut sem. Facilisi etiam dignissim diam quis. Aenean vel elit scelerisque mauris. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Fermentum odio eu feugiat pretium nibh.";
+                document.getElementById('slider').style.display = 'none';
+                document.getElementById('result').style.display = 'none';
+                document.getElementById('resulta').style.display = 'none';
+                document.getElementById('boks').style.display = 'none';
+                document.getElementById('boks2').style.display = 'none';
+                document.getElementById('resultb').style.display = 'none';
+                document.getElementById('slider2').style.display = 'none';
+            //ENDRE MÅTEN DETTE GJØRES ved å lage en div som endrer innholdet, ikke ved å endre id'ene
         }
     </script>
 </body>
