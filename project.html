@@ -17,7 +17,7 @@
             grid-template-columns: 10fr 2fr;
             grid-template-areas: 'slider slider2'
                                  'boks boks2'
-                                 'resulta resultb';
+                                 'resultb resulta';
         }
         div#boks{
             grid-area:boks;
@@ -37,10 +37,15 @@
             grid-area:resulta
         }
         div#slider{
-            grid-area:slider
+            grid-area:slider;
+
         }
         div#slider2{
-            grid-area:slider2
+            grid-area:slider2;
+            display: flex;
+            justify-content: space-around;
+
+
         }
 
         nav {
@@ -187,7 +192,7 @@
             <input id="høyde2" type="range" min="1" max="500" step="1" style="float:right;" oninput="calculate()" value="250" />
         </div>
         <div id="result"></div>
-        <div id="resulta" style="float:right;"></div>
+        <div id="resulta"></div>
         <div id="boks" style="background-color:green"></div>
         <div id="boks2" style="background-color:blue; float:right;"></div>
         <div id="resultb"></div>
